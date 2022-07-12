@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
+        ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="CADASTRO.CSS">
+
+    <title>embark</title>
+
+    
+</head>
+
+<body>
+
+
+
+
+
+    
+    <div class="container-fluid principal">
+        <div class="row linhaMaior ">
+            <div class="col-md- col-m col-lg- col-sm-">
+                <div class="main">
+                    <!-----------------------navbar------------------------------>
+                    <div class="capa ">
+                        <figure><img class="capa1" src="imagens embank/capa.png"></figure>
+                    </div>
+
+
+                    <nav class=" navbar navbar-expand-lg navbar-dark bg-dark ">
+                        <a class="navbar-brand" href="agencia.html">embank</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                            <div class="navbar-nav justify-content-around">
+                                <a class="nav-link " aria-current="page" href="agencia.html">HOME</a>
+                                <a class="nav-link" href="destino.html">DESTINOS</a>
+                                <a class="nav-link" href="promocao.html">PROMOÇÕES</a>
+                                <a class="nav-link" href="contato.html"> CONTATOS</a>
+                            </div>
+
+
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-----------------------FIM navbar------------------------------>
+
+        
+        <form class=" container-md CADASTRO">
+            <div class="row ">
+            <div class="col-md-4 ">
+                <label for="validationServer01" class="form-label">NOME</label>
+                <input type="text" class="form-control " id="validationServer01" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServer02" class="form-label">SOBRE NOME</label>
+                <input type="text" class="form-control " id="validationServer02" value="" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationServerUsername" class="form-label">ID</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    <input type="text" class="form-control " id="validationServerUsername"
+                        aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required>
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationServer03" class="form-label">CIDADE</label>
+                <input type="text" class="form-control " id="validationServer03"
+                    aria-describedby="validationServer03Feedback" required>
+                <div id="validationServer03Feedback" class="">
+                    POR FAVOR VALIDE SUA CIDADE.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer04" class="form-label">ESTADO</label>
+                <select class="form-select " id="validationServer04" aria-describedby="validationServer04Feedback"
+                    required>
+                    <option selected disabled value="">RJ</option>
+                    <option>MANAUS</option>
+                    <option>MINAS GERAIS</option>
+                </select>
+                <div id="validationServer04Feedback" class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationServer05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationServer05"
+                    aria-describedby="validationServer05Feedback" required>
+                <div id="validationServer05Feedback" class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Email para cadastro</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Confirme o Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">Email para cadastro</div>
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Senha</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+            
+               
+              
+              <label for="inputPassword5" class="form-label"> Confirme sua senha</label>
+    <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+    <div id="passwordHelpBlock" class="form-text">
+      Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+    </div>
+</div>
+
+        </form>
+
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+
+<!-----------------------------------footer---------------------->
+        <div class="footer ">
+            <div class="row  linhaMaior justify-content-around align-items-center ">
+                <div class="col1 ">
+                    <table>
+                        <tr>
+                            <th>
+                                <p>Aceitamos cartões</p>
+                            </th>
+                            <th>
+                                <figure><img src="imagens embank/cartoes.png"></figure>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col2">
+                    <h4>Contato</h4>
+                    <p>(21)96574-1340</p>
+                    <p>E-mail: embank@turismo.com.br</p>
+                </div>
+                <div class="col3">
+                    <th>
+                        <figure><img src="imagens embank/site seguro.png"></figure>
+                    </th>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+</html>
