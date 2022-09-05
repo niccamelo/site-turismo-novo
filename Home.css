@@ -1,0 +1,52 @@
+
+.jub {
+    max-width: 100%;
+    background: #dd8020;
+    display: block;    
+    border-radius: 20px;
+}
+
+
+
+.log{
+    max-width: 200px;
+    display: inline-flex;
+}
+
+.pessoas{
+    max-width: 400px;
+    display: block;  
+    height: auto;
+}
+
+.dropdown-menu{
+justify-content: center;
+}
+
+.carousel {
+    text-align: left;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    font-family: Century Gothic;
+    transition: transform 2s opacity .5s ease-out;
+    
+}
+
+.card{
+background: #fff;
+margin-top: 20px;
+border-radius: 10px;
+padding:5px;
+font-family: Century Gothic;
+height: 500px;
+
+}
+
+.bt1{
+    float: right;
+
+}
+.card-body{
+    color:#031634
+}

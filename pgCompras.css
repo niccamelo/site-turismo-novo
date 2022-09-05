@@ -1,0 +1,28 @@
+.card{
+   padding-top: 20px ;
+   margin-top: 20px;
+   border-radius: 20px;
+      display: flex;
+      
+}
+
+img{
+   padding-top: 50px;
+}
+
+#botaoCompra{
+display: inline-flex;
+float: right;
+margin-right: 80px;
+margin-top: 10px;
+}
+
+.listasH{
+   width: 820px;
+}
+
+.list-group {
+   display: inline-flex;
+   float: right;
+   margin-top: 10px;
+}

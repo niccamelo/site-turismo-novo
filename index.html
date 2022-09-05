@@ -9,14 +9,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-
         ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
-    <link rel="stylesheet" href="contato.css">
     <link rel="stylesheet" href="turismo.css">
+    <link rel="stylesheet" href="Home.css">
+    <script src="turismo.js"></script>
+    <!---link calendario-->
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
+
+
 
     <title>embark</title>
 </head>
 
 <body>
 
+   
     <div class="container-fluid principal">
 
 
@@ -74,18 +83,16 @@
             </div>
 
         </div>
-
-
         <div class="capa ">
             <figure><img class="capa1" src="imagens embank/embarknovo.jpg"></figure>
         </div>
-
-        <!-----------------------navbar------------------------------>
-       
-        <div class="container main">
+        <div class="container">
             <div class="row linhaMaior align-items-center">
                 <div class="col-md-12 col-m-12 col-lg-12 col-sm-12">
-                    
+                    <div class="main">
+                        <!-----------------------navbar------------------------------>
+
+
                         <nav class=" navbar-dark bg-dark navbar-expand-lg ">
                             <div class="container-fluid">
                                 <button class="navbar-toggler align-self-end" type="button" data-bs-toggle="collapse"
@@ -97,13 +104,13 @@
                                     <a class="navbar-brand" href="index.html">embark</a>
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <li class="nav-item">
-                                            <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="promocao.html">Promoções</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active" href="contato.html">Contatos</a>
+                                            <a class="nav-link " href="contato.html">Contatos</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
@@ -116,71 +123,132 @@
                                                 </li>
                                                 <li><a class="dropdown-item active" href="promocao.html">Promoções</a></li>
                                             </ul>
-                                        </li>    
 
                                 </div>
                             </div>
                         </nav>
-                    
-                </div>
-            </div>
-            <!-----------------------fim navbar------------------------------>
-
-
-            <!-----------------------jumbotron------------------------------>
-            
-            <div class="container-fluid jub p-5 ">
-                <div class="row linhaMaior justify-content-center">
-                    <div class="col-4 contato1 align-self-center">
-                        <h4>Contato</h4>
-                        <p>(21)96574-1340</p>
-                        <p>E-mail: embank@turismo.com.br</p>
                     </div>
                 </div>
+                <!-----------------------navbar------------------------------>
 
-            
-            <!-----------------------fim jumbotron------------------------------>
 
-            <!-----------------------------contato------------------------------->
-            <div class="row justify-content-center">
-                <div class="contato ">
-                    <div class="row mb-3">
+                <!-----------------------jumbotron------------------------------>
 
-                        <div class="row g-3 ">
-                            <h1>Informações</h1>
-                            <p>Para qualquer informação, dúvida ou comentário, por favor ligue: (21)96574-1340. Ou
-                                preencha o
-                                fomulário:</p>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Nome" aria-label="First name">
-                            </div>
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Sobrenome" aria-label="Last name">
-                            </div>
+                <div class="container-fluid jub p-5 ">
+                    <div class="row linhaMaior justify-content-center">
+                        <div class="col-lg-3 col-xl-3 col-md-3 col-sm-6 p-2">
+                            <input class="form-control" type="text" value="Para onde vai?"
+                                aria-label="readonly input " >
                         </div>
-
-                        <form class="form-floating">
-                            <input type="email" class="form-control" id="floatingInputInvalid"
-                                placeholder="name@example.com" value=".">
-                            <label for="floatingInputInvalid">Email</label>
-                        </form>
-
-                        <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                                style="height: 100px"></textarea>
-                            <label for="floatingTextarea2"></label>
-                        </div>
+                        
                     </div>
 
                 </div>
+                <!-----------------------fim jumbotron------------------------------>
+
+                <!--------------------------carousel------------------------>
+                <div class="container-fluid carousel">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="10000" >
+                                <img src="imagens embank/CARROSEL/Porto-de-Galinhas-O-que-fazer-Capa-3.jpg"
+                                    class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+
+                                    <h1>Porto de Galinhas</h1>
+                                    <p>Realize seu sonho com o menor preço.</p>
+                                </div></a>
+                            </div>
+
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="imagens embank/Disney/disney-park1.png" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Disney Orlando</h1>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1000">
+                                <img src="imagens embank/new york/nova york.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h1>Nova York</h1>
+                                    <p>Realize seu sonho com o menor preço.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                    </div>
+                </div>
+
+                <!--------------------------fim carrosel------------------------>
+
+                <!--------------------------------cards-------------------------->
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card ">
+                            <img src="imagens embank/portugal.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Portugal</h3>
+                                <p class="card-text">Venha se encantar com as maravilhas de Portugal</p>
+                                <a href="Portugal.html" class="bt1 btn btn-primary">Ver
+                                    Preços</a>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="imagens embank/fernando de noronha.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Fernando de Noronha</h3>
+                                <p class="card-text">Venha se encantar com as maravilhas Fernando de Noronha.</p>
+                                <a href="fernandoN.html" class="bt1 btn btn-primary">Ver
+                                    Preços</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="imagens embank/gramado.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Gramado</h3>
+                                <p class="card-text">Venha se encantar com as maravilhas de Gramado.</p>
+                                <a href="gramado.html" class="bt1 btn btn-primary">Ver
+                                    Preços</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="imagens embank/bahia.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h3 class="card-title">Bahia</h3>
+                                <p class="card-text">Venha se encantar com as maravilhas  de Bahia.</p>
+                                <a href="Bahia.html" class="bt1 btn btn-primary">Ver
+                                    Preços</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------------------------cards-------------------------->
             </div>
-
-
         </div>
-        </div>    
-        <!-------fim contato-->
-
-
         <div class="container-fluid footer ">
             <div class="row  linhaMaior justify-content-around  ">
 
@@ -213,6 +281,11 @@
 
             </div>
         </div>
+
+
+
+
+
 
 </body>
 
